@@ -49,7 +49,7 @@ useEffect(() => {
         scene.add(spotLight);
     
         //creating the shape (self explanitory names)
-        const capsuleGeometry = new THREE.CapsuleGeometry(12,12,7, 4);
+        const capsuleGeometry = new THREE.CapsuleGeometry(10,12,4, 8);
         const capsuleMaterial = new THREE.MeshNormalMaterial()
         //look up mesh
         const capsuleMesh = new THREE.Mesh(capsuleGeometry, capsuleMaterial);
@@ -78,7 +78,6 @@ useEffect(() => {
     return(
         <div>
             <div id='line' ref={pillRef}> </div>
-            {/* <Cube/> */}
         </div>
         
 
